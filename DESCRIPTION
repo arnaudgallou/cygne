@@ -7,6 +7,7 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1002-4247"))
 Description: A custom pkgdown theme for plume.
 License: MIT + file LICENSE
+URL: https://arnaudgallou.github.io/cygne/
 Suggests: 
     knitr,
     rmarkdown
