@@ -1,0 +1,9 @@
+citHeader("To cite cygne in publications use:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "A minimalist pkgdown theme",
+  author   = "Arnaud Gallou",
+  year     = "2023",
+  url      = "https://github.com/arnaudgallou/cygne"
+)

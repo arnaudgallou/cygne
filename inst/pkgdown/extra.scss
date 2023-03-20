@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400|Quicksand:400,500|Fira+Code:300,400");
+
+:root {
+  --bg-light: #f6f8fa;
+  --color-main: #323232;
+  --color-dark-blue: #1270a8;
+  --color-link-hover: #3d89c3;
+  --font-main: Roboto, Sans-Serif;
+  --font-title: Quicksand, Sans-Serif;
+  --font-code: Fira Code;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  color: var(--color-main);
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+nav, h1, h2, h3, h4 {
+  font-family: var(--font-title);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  margin: 30px 0 21px 0;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration-color: var(--color-dark-blue);
+}
+
+a:hover {
+  text-decoration-color: var(--color-link-hover);
+}
+
+nav a:hover {
+  text-decoration-color: inherit;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+input[type="search"], input[type="search"]:focus {
+  background-color: var(--bg-light);
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  box-shadow: none;
+}
+
+pre, code {
+  background-color: var(--bg-light);
+  font-family: var(--font-code);
+  font-weight: 300;
+}
+
+pre,
+code,
+.btn-copy-ex,
+.dropdown-menu,
+input[type="search"] {
+  border-radius: 0;
+}
+
+pre,
+.btn-copy-ex,
+input[type="search"],
+input[type="search"]:focus {
+  border: none;
+}
+
+.row > main, .row > aside {
+  margin-top: 90px;
+}
+
+.navbar {
+  height: 75px;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar, .dropdown-item {
+  font-weight: 200;
+  color: inherit;
+}
+
+#toc > .nav a.nav-link.active,
+.active > .nav-link,
+.nav-link:hover,
+.nav-item > .nav-link:hover {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.active > .nav-link,
+.nav-item > .nav-link:hover {
+  text-decoration: underline;
+}
+
+#toc > .nav a.nav-link.active,
+#toc > .nav a.nav-link:hover {
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-item {
+  padding: .5rem 1rem;
+}
+
+.dropdown-item:hover, .dropdown-item:active {
+  background-color: var(--bg-light);
+}
+
+.dropdown-item:focus, .dropdown-item:active {
+  color: var(--color-main);
+}
+
+.pkgdown-footer-right p {
+  text-align: right;
+}
+
+aside a, p > a, a > code {
+  color: var(--color-dark-blue);
+  text-decoration: none;
+}
+
+aside a:hover, p > a:hover, a > code:hover {
+  color: var(--color-link-hover);
+}
+
+.btn-copy-ex, .btn-copy-ex:hover {
+  background-color: var(--color-dark-blue);
+}
+
+@media (min-width: 576px) {
+  .template-home .page-header {
+    min-height: 0;
+  }
+
+  #toc {
+    top: 75px;
+  }
+}

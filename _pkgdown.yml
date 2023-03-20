@@ -1,0 +1,7 @@
+url: ~
+template:
+  package: cygne
+  bootstrap: 5
+
+development:
+  mode: auto

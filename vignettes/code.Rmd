@@ -1,0 +1,80 @@
+---
+title: "Code"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Code}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Ut posuere ante sit amet tellus semper lobortis. Nulla in lorem ante. Donec luctus augue purus, congue gravida mi maximus in. Maecenas gravida molestie nisl eu lobortis. Aenean fermentum tincidunt blandit. Morbi sed turpis consectetur purus efficitur porttitor sit amet ut purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+```{r setup}
+library(R6)
+library(purrr)
+```
+
+Duis fringilla tempor cursus.
+
+```{r}
+NameHandler <- R6Class(
+  classname = "NameHandler",
+  public = list(
+    names = NULL,
+
+    initialize = function(names) {
+      self$names <- names
+    },
+    
+    print = function() {
+      print(self$names)
+    }
+  ),
+
+  private = list(
+    get_names = function(..., use_keys = TRUE) {
+      dots <- c(...)
+      nms <- if (is.list(dots)) unlist(dots) else dots
+      unlist(self$names[nms], use.names = use_keys)
+    },
+
+    set_names = function(x) {
+      if (any(lengths(x)) > 1L) {
+        x <- map(x, 1L)
+      }
+      if (all(x %in% self$names)) {
+        return()
+      }
+      self$names <- list_assign(self$names, !!!x)
+    }
+  )
+)
+
+regex <- function(x) {
+  structure(x, class = c("regex", "character"))
+}
+
+detect_name <- function(x, name) {
+  str_detect(names(x), name)
+}
+
+has_name <- function(x, name) {
+  UseMethod("has_name", object = name)
+}
+
+has_name.default <- function(x, name) {
+  name %in% names(x)
+}
+
+has_name.regex <- function(x, name) {
+  any(detect_name(x, name))
+}
+```
+
