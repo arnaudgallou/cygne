@@ -165,12 +165,45 @@ aside a:hover, p > a:hover, a > code:hover {
   background-color: var(--color-dark-blue);
 }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .template-home .page-header {
     min-height: 0;
   }
 
   #toc {
     top: 75px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    background-color: white;
+    margin: 0 !important;
+    padding-bottom: 9px;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: transparent;
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  aside {
+    margin: 0;
+  }
+
+  .btn-copy-ex {
+    right: 5px !important;
+  }
+
+  .pkgdown-footer-left {
+    margin-top: 15px;
+  }
+
+  .pkgdown-footer-left p,
+  .pkgdown-footer-right p {
+    text-align: center;
+    margin-bottom: 0;
   }
 }
