@@ -148,13 +148,17 @@ input[type="search"]:focus {
   text-align: right;
 }
 
-aside a, p > a, a > code {
+aside a, p > a, a > code, .search-details {
   color: var(--color-dark-blue);
   text-decoration: none;
 }
 
 aside a:hover, p > a:hover, a > code:hover {
   color: var(--color-link-hover);
+}
+
+.aa-suggestion:hover {
+  background-color: var(--bg-light);
 }
 
 .btn-copy-ex, .btn-copy-ex:hover {
