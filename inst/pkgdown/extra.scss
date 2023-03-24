@@ -144,10 +144,6 @@ input[type="search"]:focus {
   color: var(--color-main);
 }
 
-.pkgdown-footer-right p {
-  text-align: right;
-}
-
 aside a, p > a, a > code, .search-details {
   color: var(--color-dark-blue);
   text-decoration: none;
@@ -163,6 +159,16 @@ aside a:hover, p > a:hover, a > code:hover {
 
 .btn-copy-ex, .btn-copy-ex:hover {
   background-color: var(--color-dark-blue);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+footer p {
+  margin: 0;
 }
 
 @media only screen and (min-width: 576px) {
@@ -213,13 +219,11 @@ aside a:hover, p > a:hover, a > code:hover {
     right: 5px !important;
   }
 
-  .pkgdown-footer-left {
-    margin-top: 15px;
+  footer {
+    margin-bottom: 0;
   }
 
-  .pkgdown-footer-left p,
-  .pkgdown-footer-right p {
+  footer p {
     text-align: center;
-    margin-bottom: 0;
   }
 }
