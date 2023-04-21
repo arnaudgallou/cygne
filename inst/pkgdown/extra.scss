@@ -47,11 +47,11 @@ h4 {
   font-size: 1.2em;
 }
 
-a {
+a, .external-link {
   text-decoration-color: var(--color-dark-blue);
 }
 
-a:hover {
+a:hover, .external-link:hover {
   text-decoration-color: var(--color-link-hover);
 }
 
