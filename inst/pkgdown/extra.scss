@@ -163,6 +163,22 @@ aside a:hover, p > a:hover, a > code:hover {
   background-color: var(--color-dark-blue);
 }
 
+.super_chunk {
+  padding-bottom: 9px;
+  margin-bottom: 1em;
+  background-color: var(--bg-light);
+}
+
+.super_chunk .sourceCode {
+  margin-bottom: 0;
+}
+
+.super_chunk-output {
+  padding: 15px;
+  margin: 0 9px;
+  background-color: white;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
