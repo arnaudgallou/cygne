@@ -179,6 +179,18 @@ aside a:hover, p > a:hover, a > code:hover {
   background-color: white;
 }
 
+table, tbody, tr, td {
+  border: none !important;
+}
+
+.gt_table {
+  width: 90% !important;
+}
+
+.gt_col_heading {
+  font-weight: 500 !important
+}
+
 footer {
   display: flex;
   justify-content: space-between;
