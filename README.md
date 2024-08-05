@@ -6,7 +6,6 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-cygne provides a custom pkgdown theme for
-[plume](https://github.com/arnaudgallou/plume).
+Custom pkgdown theme for my packages.
 
 Please don’t use it for your own package.
