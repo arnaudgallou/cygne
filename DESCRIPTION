@@ -2,17 +2,17 @@ Type: Package
 Package: cygne
 Title: A Minimalist pkgdown Theme
 Version: 0.1.0
-Authors@R: 
+Authors@R:
     person("Arnaud", "Gallou", , "agallou.gh@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1002-4247"))
-Description: A custom pkgdown theme for plume.
+Description: A custom pkgdown theme for my packages.
 License: MIT + file LICENSE
 URL: https://github.com/arnaudgallou/cygne,
     https://arnaudgallou.github.io/cygne/
-Suggests: 
+Suggests:
     knitr,
     rmarkdown
-VignetteBuilder: 
+VignetteBuilder:
     knitr
 Encoding: UTF-8
 LazyData: true
