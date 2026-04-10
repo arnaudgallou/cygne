@@ -61,9 +61,12 @@ nav a:hover {
   text-decoration-color: inherit;
 }
 
+#main ul, p {
+  line-height: 1.8em;
+}
+
 p {
   text-align: justify;
-  line-height: 1.8em;
 }
 
 input[type="search"], input[type="search"]:focus {
