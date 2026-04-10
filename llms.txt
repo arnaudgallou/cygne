@@ -1,0 +1,20 @@
+# cygne
+
+Custom pkgdown theme for my packages.
+
+Please don’t use it for your own package.
+
+# Package index
+
+## All functions
+
+- [`foo()`](https://arnaudgallou.github.io/cygne/reference/foo.md) : Foo
+  function
+
+# Articles
+
+### All vignettes
+
+- [Bullets](https://arnaudgallou.github.io/cygne/articles/bullets.md):
+- [Code](https://arnaudgallou.github.io/cygne/articles/code.md):
+- [Headings](https://arnaudgallou.github.io/cygne/articles/headings.md):
